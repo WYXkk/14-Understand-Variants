@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>14 Understand Variants</title>
+<style>
+.onbutton,.offbutton,.onlight,.offlight {
+  border:1px solid;
+  border-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-size: large;
+  overflow: hidden;
+  vertical-align:middle
+}
+.onbutton,.offbutton {
+  width:70px;
+  height: 70px;
+}
+.onlight,.offlight {
+  width: 40px;
+  height: 40px;
+}
+.onbutton,.onlight {
+  background-color: green;
+}
+.offbutton,.offlight {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+	<p>点击下面的按钮来选择题目：</p>
+	<div id="buttons">
+	</div>
+	<div id="problems">
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+  <br><br><button onclick="generateCode()">点击导出代码</button>
+  <p>上方按钮会把你当前的各个最终题版的解以 C++ 代码形式导出到下方输入框中，复制并在原题用 C++ 提交即可。</p>
+  <textarea rows="40" cols="60" id="code"></textarea>
+</body>
+</html>
