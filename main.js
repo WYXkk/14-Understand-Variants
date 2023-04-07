@@ -419,6 +419,7 @@ function generateCode(){
 			}
 			code+="\"<<endl;"
 		}
+		if(i==6) code+="\n\t\tcerr<<\"U 1 1 3\"<<endl;\n\t\tcerr<<\"  7 2 5\"<<endl;"
 		code+="\n\t}";
 	}
 	code+="\n\treturn 0;\n}";
